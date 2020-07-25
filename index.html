@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FOR WEB PAGE TITLE -->
+    <title>Turitor</title>
+
+    <!--===================================
+               CSS LINK PART STRAT
+    =====================================-->
+    <link rel="stylesheet" href="./assets/icon/font-awesome/all.min.css">
+    <link rel="stylesheet" href="./assets/src/css/slick.css">
+    <link rel="stylesheet" href="./assets/src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/src/css/responsive.css">
+    <link rel="stylesheet" href="./assets/src/sass/main.css">
+    <!--===================================
+               CSS LINK PART END
+    =====================================-->
+</head>
+<body>
+    <!--===================================
+                NAVBAR PART START
+    =====================================-->
+    <header id="header__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <a class="navbar-brand" href="#">
+                        <img class="header__logo" src="./assets/images/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__middle">
+                        <div class="dropdown header__cat">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/svg/humburger_2.svg" alt="humburger_2">
+                                categories
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">art & design</a>
+                                <a class="dropdown-item" href="#">architecture</a>
+                                <a class="dropdown-item" href="#">business study</a>
+                                <a class="dropdown-item" href="#">computer science</a>
+                                <a class="dropdown-item" href="#">web development</a>
+                                <a class="dropdown-item" href="#">data science</a>
+                                <a class="dropdown-item" href="#">engineering</a>
+                                <a class="dropdown-item" href="#">mathmatics</a>
+                            </div>
+                        </div>
+
+                        <form class="form-inline">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">
+                                        Home
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">home 1</a>
+                                        <a class="dropdown-item" href="#">home 2</a>
+                                        <a class="dropdown-item" href="#">home 3</a>
+                                        <a class="dropdown-item" href="#">home 4</a>
+                                        <a class="dropdown-item" href="#">home 5</a>
+                                        <a class="dropdown-item" href="#">home 6</a>
+                                        <a class="dropdown-item" href="#">
+                                            home classic 
+                                            <span class="new__item">(new)</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">home university</a>
+                                        <a class="dropdown-item" href="#">home kindrgarten</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">about</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        course
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">course style 1</a>
+                                        <a class="dropdown-item" href="#">course style 1</a>
+                                        <a class="dropdown-item" href="#">course load more</a>
+                                        <a class="dropdown-item" href="#">course single</a>
+                                        <a class="dropdown-item" href="#">lesson single</a>
+                                        <a class="dropdown-item" href="#">zoom meeting</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        pages
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">become an instructor</a>
+                                        <a class="dropdown-item" href="#">instructor</a>
+                                        <a class="dropdown-item" href="#">instructor profile</a>
+                                        <a class="dropdown-item" href="#">gallery</a>
+                                        <a class="dropdown-item" href="#">pricing</a>
+                                        <a class="dropdown-item" href="#">faq</a>
+                                        <a class="dropdown-item" href="#">404</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        blog
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">blog list</a>
+                                        <a class="dropdown-item" href="#">blog single</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">contact</a>
+                                </li>
+                            </ul>
+
+                            <ul class="header__icon">
+                                <li class="icon__item header__user">
+                                    <a class="icon__link" href="#"><i class="fas fa-user"></i></a>
+                                </li>
+                                <li class="icon__item header__cart">
+                                    <a class="icon__link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <span class="icon__notify">0</span>
+                                </li>
+                                <li class="icon__item header__bar">
+                                    <a class="icon__link__bar" href="#"><i class="fas fa-bars"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--===================================
+                HEADER PART END
+    =====================================-->
+
+
+    <!--===================================
+                BANNER PART START
+    =====================================-->
+    <section id="banner__part">
+        <img class="banner__shape" src="assets/images/banner/banner_shape.png" alt="banner_shape">
+        <img class="banner__img" src="assets/images/banner/banner_image.png" alt="banner_image">
+        <div class="container">
+            <div class="banner__content">
+                <h2 class="banner__heading"># Improving lives through learning</h2>
+                <h1 class="banner__title">Learn Anytime, Anywhere. Accelerate Your Future.</h1>
+                <p class="banner__text">We believe everyone has the capacity to be creative. Eduzion is a place where people develop their own potential.</p>
+                <div class="banner__btn">
+                    <a class="btn__link" href="#">
+                        <i class="fas fa-plus-circle"></i>
+                        view course
+                    </a>
+                    <a class="btn__link" href="#">
+                        <i class="fas fa-user-plus"></i>
+                        start trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                BANNER PART END
+    =====================================-->
+
+
+    <!--===================================
+                COUNTER PART START
+    =====================================-->
+    <section id="counter__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="counter__div">
+                        <span class="counter__number">506</span>
+                        <span class="counter__plus">+</span>
+                        <p class="counter__text">Courses & videos</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="counter__div">
+                        <span class="counter__number">265</span>
+                        <span class="counter__plus">+</span>
+                        <p class="counter__text">Expert teachers</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="counter__div">
+                        <span class="counter__number">4506</span>
+                        <span class="counter__plus">+</span>
+                        <p class="counter__text">Students</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="counter__div">
+                        <span class="counter__number">310</span>
+                        <span class="counter__plus">+</span>
+                        <p class="counter__text">Classes complete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                COUNTER PART END
+    =====================================-->
+
+
+    <!--===================================
+                POPULAR PART START
+    =====================================-->
+    <section id="popular__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="popular__heading">
+                        <h3 class="heading"># Top categories</h3>
+                        <h2 class="title">Popular subjects</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="popular__descrip">Online learning offers a new way to explore subjects you’re passionate about.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="popular__btn">
+                        <a class="btn__link" href="#">
+                            <i class="fas fa-eye"></i>
+                            view all
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="subject__card m__updown">
+                        <img class="sub__img" src="assets/images/subjects/sub_1.png" alt="sub_1">
+                        <h3 class="sub__title">computer science</h3>
+                        <p class="sub__outline">27 courses</p>
+                        <span class="top__shape"></span>
+                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="subject__card m__updown">
+                        <img class="sub__img" src="assets/images/subjects/sub_2.png" alt="sub_2">
+                        <h3 class="sub__title">web development</h3>
+                        <p class="sub__outline">43 courses</p>
+                        <span class="top__shape"></span>
+                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="subject__card m__updown">
+                        <img class="sub__img" src="assets/images/subjects/sub_3.png" alt="sub_3">
+                        <h3 class="sub__title">data science</h3>
+                        <p class="sub__outline">16 courses</p>
+                        <span class="top__shape"></span>
+                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="subject__card m__updown">
+                        <img class="sub__img" src="assets/images/subjects/sub_4.png" alt="sub_4">
+                        <h3 class="sub__title">engineering</h3>
+                        <p class="sub__outline">57 courses</p>
+                        <span class="top__shape"></span>
+                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="subject__card">
+                        <img class="sub__img" src="assets/images/subjects/sub_5.png" alt="sub_5">
+                        <h3 class="sub__title">architecture</h3>
+                        <p class="sub__outline">24 courses</p>
+                        <span class="top__shape"></span>
+                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="subject__card">
+                        <img class="sub__img" src="assets/images/subjects/sub_6.png" alt="sub_6">
+                        <h3 class="sub__title">art & design</h3>
+                        <p class="sub__outline">31 courses</p>
+                        <span class="top__shape"></span>
+                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="subject__card">
+                        <img class="sub__img" src="assets/images/subjects/sub_7.png" alt="sub_7">
+                        <h3 class="sub__title">mathmatics</h3>
+                        <p class="sub__outline">29 courses</p>
+                        <span class="top__shape"></span>
+                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="subject__card">
+                        <img class="sub__img" src="assets/images/subjects/sub_8.png" alt="sub_8">
+                        <h3 class="sub__title">business study</h3>
+                        <p class="sub__outline">48 courses</p>
+                        <span class="top__shape"></span>
+                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                POPULAR PART END
+    =====================================-->
+
+
+    <!--===================================
+                FEATURE PART START
+    =====================================-->
+    <section id="feature__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature__heading">
+                        <h3 class="heading"># Top categories</h3>
+                        <h2 class="title">Popular subjects</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="feature__descrip">Online learning offers a new way to explore subjects you’re passionate about.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature__btn">
+                        <a class="btn__link" href="#">
+                            <i class="fas fa-eye"></i>
+                            view all
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 offset-1">
+                    <div class="feature__menu">
+                        <button class="menu active" type="button" data-filter="all">All Categories</button>
+                        <button class="menu" type="button" data-filter=".data">Data and Tech</button>
+                        <button class="menu" type="button" data-filter=".digit">Digital Marketing</button>
+                        <button class="menu" type="button" data-filter=".busi">Business Study</button>
+                        <button class="menu" type="button" data-filter=".art">Art & Design</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature__plugin">
+                <div class="col-lg-4 mix art" data-order="1">
+                    <div class="feature__card">
+                        <img class="feature__card__img" src="assets/images/course/course_1.png" alt="course_1">
+                        <a class="feature__card__title" href="#">psychology</a>
+                        <h3 class="feature__card__heading">Buddhism and Modern Psychology </h3>
+                        <ul class="feature__card__enroll">
+                            <li class="enroll__item">
+                                <i class="fas fa-file"></i>
+                                <span>lesson</span>
+                            </li>
+                            <li class="enroll__item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>50</span>
+                            </li>
+                        </ul>
+                        <div class="feature__author">
+                            <a class="author__img" href="#">
+                                <img src="assets/images/course/author_1.png" alt="author_1">
+                            </a>
+                            <a class="author__name">Victor Valdes</a>
+                        </div>
+                        <ul class="feature__course__details">
+                            <li class="feature__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating__count">(136)</span>
+                            </li>
+                            <li class="feature__price">$399</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mix busi" data-order="2">
+                    <div class="feature__card">
+                        <img class="feature__card__img" src="assets/images/course/course_2.png" alt="course_2">
+                        <a class="feature__card__title" href="#">Data and Tech</a>
+                        <h3 class="feature__card__heading">Achieving Advanced Insights with BigQuery</h3>
+                        <ul class="feature__card__enroll">
+                            <li class="enroll__item">
+                                <i class="fas fa-file"></i>
+                                <span>lesson</span>
+                            </li>
+                            <li class="enroll__item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>50</span>
+                            </li>
+                        </ul>
+                        <div class="feature__author">
+                            <a class="author__img" href="#">
+                                <img src="assets/images/course/author_1.png" alt="author_1">
+                            </a>
+                            <a class="author__name">Victor Valdes</a>
+                        </div>
+                        <ul class="feature__course__details">
+                            <li class="feature__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating__count">(136)</span>
+                            </li>
+                            <li class="feature__price">$399</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mix data" data-order="3">
+                    <div class="feature__card">
+                        <img class="feature__card__img" src="assets/images/course/course_3.png" alt="course_3">
+                        <a class="feature__card__title" href="#">Business Study</a>
+                        <h3 class="feature__card__heading">Competitive Strategy and Organization</h3>
+                        <ul class="feature__card__enroll">
+                            <li class="enroll__item">
+                                <i class="fas fa-file"></i>
+                                <span>lesson</span>
+                            </li>
+                            <li class="enroll__item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>50</span>
+                            </li>
+                        </ul>
+                        <div class="feature__author">
+                            <a class="author__img" href="#">
+                                <img src="assets/images/course/author_1.png" alt="author_1">
+                            </a>
+                            <a class="author__name">Victor Valdes</a>
+                        </div>
+                        <ul class="feature__course__details">
+                            <li class="feature__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating__count">(136)</span>
+                            </li>
+                            <li class="feature__price">$399</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mix digit" data-order="4">
+                    <div class="feature__card">
+                        <img class="feature__card__img" src="assets/images/course/course_4.png" alt="course_4">
+                        <a class="feature__card__title" href="#">psychology</a>
+                        <h3 class="feature__card__heading">Buddhism and Modern Psychology </h3>
+                        <ul class="feature__card__enroll">
+                            <li class="enroll__item">
+                                <i class="fas fa-file"></i>
+                                <span>lesson</span>
+                            </li>
+                            <li class="enroll__item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>50</span>
+                            </li>
+                        </ul>
+                        <div class="feature__author">
+                            <a class="author__img" href="#">
+                                <img src="assets/images/course/author_1.png" alt="author_1">
+                            </a>
+                            <a class="author__name">Victor Valdes</a>
+                        </div>
+                        <ul class="feature__course__details">
+                            <li class="feature__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating__count">(136)</span>
+                            </li>
+                            <li class="feature__price">$399</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mix art" data-order="5">
+                    <div class="feature__card">
+                        <img class="feature__card__img" src="assets/images/course/course_5.png" alt="course_5">
+                        <a class="feature__card__title" href="#">psychology</a>
+                        <h3 class="feature__card__heading">Buddhism and Modern Psychology </h3>
+                        <ul class="feature__card__enroll">
+                            <li class="enroll__item">
+                                <i class="fas fa-file"></i>
+                                <span>lesson</span>
+                            </li>
+                            <li class="enroll__item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>50</span>
+                            </li>
+                        </ul>
+                        <div class="feature__author">
+                            <a class="author__img" href="#">
+                                <img src="assets/images/course/author_1.png" alt="author_1">
+                            </a>
+                            <a class="author__name">Victor Valdes</a>
+                        </div>
+                        <ul class="feature__course__details">
+                            <li class="feature__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating__count">(136)</span>
+                            </li>
+                            <li class="feature__price">$399</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mix busi" data-order="6">
+                    <div class="feature__card">
+                        <img class="feature__card__img" src="assets/images/course/course_6.png" alt="course_6">
+                        <a class="feature__card__title" href="#">psychology</a>
+                        <h3 class="feature__card__heading">Buddhism and Modern Psychology </h3>
+                        <ul class="feature__card__enroll">
+                            <li class="enroll__item">
+                                <i class="fas fa-file"></i>
+                                <span>lesson</span>
+                            </li>
+                            <li class="enroll__item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>50</span>
+                            </li>
+                        </ul>
+                        <div class="feature__author">
+                            <a class="author__img" href="#">
+                                <img src="assets/images/course/author_1.png" alt="author_1">
+                            </a>
+                            <a class="author__name">Victor Valdes</a>
+                        </div>
+                        <ul class="feature__course__details">
+                            <li class="feature__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating__count">(136)</span>
+                            </li>
+                            <li class="feature__price">$399</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                FEATURE PART END
+    =====================================-->
+
+
+    <!--===================================
+            TESTIMONIAL PART START
+    =====================================-->
+    <section id="testi__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testi__content">
+                        <div class="testi__heading">
+                            <h3 class="heading"># Testimonials</h3>
+                            <h2 class="title">What Students Says</h2>
+                        </div>
+                        <p class="testi__descrip">Online learning offers a new way to explore subjects you’re passionate about.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="testi__slider">
+                        <div class="testi__card">
+                            <div class="testi__says">
+                                <img class="testi__qoute" src="assets/images/testimonial/qoute.png" alt="qoute">
+                                <p class="testi__text">I have a strong coxatrose joint disease caused by worn cartilage in my left hip</p>
+                            </div>
+                            <div class="testi__author">
+                                <div class="testi__author__item">
+                                    <img src="assets/images/testimonial/testi_1.png" alt="testi_1">
+                                </div>
+                                <div class="testi__author__item">
+                                    <h3>Blaise Matuidi</h3>
+                                    <h4>Research Student</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi__card">
+                            <div class="testi__says">
+                                <img class="testi__qoute" src="assets/images/testimonial/qoute.png" alt="qoute">
+                                <p class="testi__text">What I learned during Strategic Thinking program gave me exactly what</p>
+                            </div>
+                            <div class="testi__author">
+                                <div class="testi__author__item">
+                                    <img src="assets/images/testimonial/testi_1.png" alt="testi_1">
+                                </div>
+                                <div class="testi__author__item">
+                                    <h3>Mario Mandžukić</h3>
+                                    <h4>Postgraduate Student</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi__card">
+                            <div class="testi__says">
+                                <img class="testi__qoute" src="assets/images/testimonial/qoute.png" alt="qoute">
+                                <p class="testi__text">I have a strong coxatrose joint disease caused by worn cartilage in my left hip</p>
+                            </div>
+                            <div class="testi__author">
+                                <div class="testi__author__item">
+                                    <img src="assets/images/testimonial/testi_2.png" alt="testi_2">
+                                </div>
+                                <div class="testi__author__item">
+                                    <h3>Blaise Matuidi</h3>
+                                    <h4>Research Student</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi__card">
+                            <div class="testi__says">
+                                <img class="testi__qoute" src="assets/images/testimonial/qoute.png" alt="qoute">
+                                <p class="testi__text">People program enabled me to be a fuller me, using differe skills and behaviors...</p>
+                            </div>
+                            <div class="testi__author">
+                                <div class="testi__author__item">
+                                    <img src="assets/images/testimonial/testi_3.png" alt="testi_3">
+                                </div>
+                                <div class="testi__author__item">
+                                    <h3>Mario Mandžukić</h3>
+                                    <h4>Postgraduate Student</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+             TESTIMONAIL PART END
+    =====================================-->
+
+
+    <!--===================================
+               INSTRUCTOR PART START
+    =====================================-->
+    <section id="instruct__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="instruct__content">
+                        <div class="instruct__heading">
+                            <h3 class="heading"># Instructor</h3>
+                            <h2 class="title">Featured Instructors</h2>
+                        </div>
+                        <p class="instruct__descrip">Discover how to anticipate and adapt to the latest trends and digital</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="instruct__slider">
+                        <div class="instruct__card">
+                            <div class="instruct__round">
+                                <div class="round__img">
+                                    <img src="assets/images/instructor/instruct_round_1.png" alt="instruct_round_1">
+                                </div>
+                                <h3 class="round__name">Eric Abidal</h3>
+                                <p class="round__prof">Asst. Professor</p>
+                                <div class="instruct__hover">
+                                    <img src="assets/images/instructor/instructor_1.png" alt="instructor_1">
+                                    <div class="hover__oly">
+                                        <div class="hover__cover">
+                                            <h3>Eric Abidal</h3>
+                                            <p>Asst. Professor</p>
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instruct__card">
+                            <div class="instruct__round">
+                                <div class="round__img">
+                                    <img src="assets/images/instructor/instruct_round_3.png" alt="instruct_round_3">
+                                </div>
+                                <h3 class="round__name">Yolanda Cardona</h3>
+                                <p class="round__prof">Professor</p>
+                                <div class="instruct__hover">
+                                    <img src="assets/images/instructor/instructor_3.png" alt="instructor_3">
+                                    <div class="hover__oly">
+                                        <div class="hover__cover">
+                                            <h3>Yolanda Cardona</h3>
+                                            <p>Professor</p>
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instruct__card">
+                            <div class="instruct__round">
+                                <div class="round__img">
+                                    <img src="assets/images/instructor/instruct_round_2.png" alt="instruct_round_2">
+                                </div>
+                                <h3 class="round__name">Yolanda Ruiz</h3>
+                                <p class="round__prof">Instructor</p>
+                                <div class="instruct__hover">
+                                    <img src="assets/images/instructor/instructor_2.png" alt="instructor_2">
+                                    <div class="hover__oly">
+                                        <div class="hover__cover">
+                                            <h3>Yolanda Ruiz</h3>
+                                            <p>Instructor</p>
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instruct__card">
+                            <div class="instruct__round">
+                                <div class="round__img">
+                                    <img src="assets/images/instructor/instruct_round_4.png" alt="instruct_round_4">
+                                </div>
+                                <h3 class="round__name">Carolina Martin</h3>
+                                <p class="round__prof">Instructor</p>
+                                <div class="instruct__hover">
+                                    <img src="assets/images/instructor/instructor_4.png" alt="instructor_4">
+                                    <div class="hover__oly">
+                                        <div class="hover__cover">
+                                            <h3>Carolina Martin</h3>
+                                            <p>Instructor</p>
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instruct__card">
+                            <div class="instruct__round">
+                                <div class="round__img">
+                                    <img src="assets/images/instructor/instruct_round_1.png" alt="instruct_round_1">
+                                </div>
+                                <h3 class="round__name">Yolanda Ruiz</h3>
+                                <p class="round__prof">Professor</p>
+                                <div class="instruct__hover">
+                                    <img src="assets/images/instructor/instructor_1.png" alt="instructor_1">
+                                    <div class="hover__oly">
+                                        <div class="hover__cover">
+                                            <h3>Yolanda Ruiz</h3>
+                                            <p>Professor</p>
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+               INSTRUCTOR PART END
+    =====================================-->
+    
+
+    <!--===================================
+                JS LINK PART START
+    =====================================-->
+    <!-- FOR BOOTSTRAP FRAMWORK -->
+    <script src="./assets/src/js/jquery-1.12.4.min.js"></script>
+    <script src="./assets/src/js/popper.min.js"></script>
+    <script src="./assets/src/js/bootstrap.min.js"></script>
+
+    <!-- FOR SLICK SLDER PLUGIN -->
+    <script src="./assets/src/js/slick.min.js"></script>
+    <script src="./assets/src/js/slick.js"></script>
+
+    <!-- FOR COUTERUP PLUGIN -->
+    <script src="./assets/src/js/waypoints.min.js"></script>
+    <script src="./assets/src/js/counterup.min.js"></script>
+    <script src="./assets/src/js/counterup.js"></script>
+
+    <!-- FOR MIXITUP PLUGIN -->
+    <script src="./assets/src/js/mixitup.min.js"></script>
+    <script src="./assets/src/js/mixitup.js"></script>
+
+    <!-- FOR CUSTOMIZABLE -->
+    <script src="./assets/src/js/main.js"></script>
+    <!--===================================
+                JS LINK PART END
+    =====================================-->
+</body>
+</html>

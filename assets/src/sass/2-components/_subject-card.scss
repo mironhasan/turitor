@@ -1,0 +1,84 @@
+
+
+
+
+// =====================================
+//         INDEX SUBJECT CARD
+//======================================
+.subject__card {
+    width: 100%;
+    padding: 50px 30px 45px;
+    border-radius: 15px;
+    border: 1px dashed #e8e8e8;
+    background-color: $wh__color;
+    text-align: center;
+    position: relative;
+
+    &:hover {
+        box-shadow: 0 30px 50px 0 rgba(51, 51, 51, 0.08);
+        border-color: transparent;
+
+        .top__shape {
+            left: -15px;
+            top: -15px;
+            transform: scale(1);
+        }
+
+        .bottom__shape {
+            right: -15px;
+            bottom: -15px;
+            transform: scale(1);
+        }
+
+        .sub__img {
+            transform: scale(0.9);
+        }
+    }
+
+    .sub__img {
+        margin-bottom: 27px;
+        width: 120px;
+        height: auto;
+        border-radius: 50%;
+        transform: scale(1);
+        @include cursor__transition;
+    }
+
+    .sub__title {
+        color: $heading__color;
+        font-size: 22px;
+        @include secondary__bold;
+        text-transform: capitalize;
+    }
+
+    .sub__outline {
+        @include description;
+        margin-top: 8px;
+    }
+
+    .top__shape {
+        background-color: #0eb582;
+        position: absolute;
+        display: block;
+        height: 60px;
+        width: 60px;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        border-radius: 6px;
+        transform: scale(0);
+        @include cursor__transition;
+    }
+
+    .bottom__shape {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        @include cursor__transition;
+    }
+}

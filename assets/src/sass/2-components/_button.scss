@@ -1,0 +1,26 @@
+
+
+
+//=====================================
+//         ALL BUTTON STYLE
+//=====================================  
+.btn__link {
+    background-color: $brand__color;
+    padding: 14px 30px 15px 30px;
+    border-radius: 36px;
+    border: 2px solid $brand__color;
+    color:$wh__color;
+    font-size: 0.875rem;
+    @include thirdary__bold;
+    text-transform: uppercase;
+    @include cursor__transition;
+}
+
+.btn__link i {
+    margin-right: 10px;
+}
+
+.btn__link:hover {
+    color: $brand__color;
+    background: $wh__color;
+}

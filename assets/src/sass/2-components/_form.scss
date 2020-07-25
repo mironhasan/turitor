@@ -1,0 +1,37 @@
+
+
+
+
+// =====================================
+//         HEADER SEARCH BAR
+//======================================
+.form-inline {
+    width: 100%;
+    margin-left: 15px;
+    border: 1px solid #4e5c77;
+    @include flex__center;
+
+    .btn {
+        color: $wh__color;
+        border-radius: 0rem;
+        padding: 0px 8px;
+        border: none;
+        background: transparent;
+    }
+
+    .form-control {
+        width: 115px;
+        border: none;
+        border-radius: 0rem;
+        padding: 0rem;
+        height: 40px;
+        background: transparent;
+
+        &:focus {
+            color: $wh__color !important;
+            background-color: transparent;
+            border-color: transparent;
+            box-shadow: none !important;
+        }
+    }
+}

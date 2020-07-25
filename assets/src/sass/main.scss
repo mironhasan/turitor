@@ -1,0 +1,27 @@
+
+
+
+
+// 1 - HELPERS FOLDER
+@import "./1-helpers/_font.scss";
+@import "./1-helpers/_common.scss";
+@import "./1-helpers/_variable.scss";
+@import "./1-helpers/_mixin.scss";
+
+
+// 2 - COMPONENTS
+@import "./2-components/_button.scss";
+@import "./2-components/_form.scss";
+@import "./2-components/_dropdown.scss";
+@import "./2-components/_navbar.scss";
+@import "./2-components/_subject-card.scss";
+@import "./2-components/_feature-card.scss";
+
+
+// 3 - LAYOUTS
+@import "./3-layouts/_header.scss";
+@import "./3-layouts/_footer.scss";
+
+
+// 4 - PAGES
+@import "./4-pages/_index.scss";

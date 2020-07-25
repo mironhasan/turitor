@@ -1,0 +1,126 @@
+
+
+
+// =====================================
+//      PRIMARY TEXT FONT TYPOGRPHY
+//======================================
+@mixin primary__regular {
+    font-weight: 400;
+    font-family: $primary__family;
+}
+
+@mixin primary__medium {
+    font-weight: 500;
+    font-family: $primary__family;
+}
+
+@mixin primary__semibold {
+    font-weight: 600;
+    font-family: $primary__family;
+}
+
+@mixin primary__bold {
+    font-weight: 700;
+    font-family: $primary__family;
+}
+
+
+// =====================================
+//     SECONDARY TEXT FONT TYPOGRPHY
+//======================================
+@mixin secondary__regular {
+    font-weight: 400;
+    font-family: $secondary__family;
+}
+
+@mixin secondary__medium {
+    font-weight: 500;
+    font-family: $secondary__family;
+}
+
+@mixin secondary__semibold {
+    font-weight: 600;
+    font-family: $secondary__family;
+}
+
+@mixin secondary__bold {
+    font-weight: 700;
+    font-family: $secondary__family;
+}
+
+
+// =====================================
+//     THIRDARY TEXT FONT TYPOGRPHY
+//======================================
+@mixin thirdary__regular {
+    font-weight: 400;
+    font-family: $thirdary__family;
+}
+
+@mixin thirdary__medium {
+    font-weight: 500;
+    font-family: $thirdary__family;
+}
+
+@mixin thirdary__semibold {
+    font-weight: 600;
+    font-family: $thirdary__family;
+}
+
+@mixin thirdary__bold {
+    font-weight: 700;
+    font-family: $thirdary__family;
+}
+
+@mixin thirdary__black {
+    font-weight: 900;
+    font-family: $thirdary__family;
+}
+
+
+// =====================================
+//      TRANSITION BROWSER PREFIX
+//======================================
+@mixin cursor__transition {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+// =====================================
+//         FLEX CENTER PROPERTY
+//======================================
+@mixin flex__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// =====================================
+//         FLEX START PROPERTY
+//======================================
+@mixin flex__start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+// =====================================
+//       BACKGROUND IMAGE PROPERTY
+//======================================
+@mixin background__property {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// =====================================
+//        P TAG STYLE MIXIN
+//======================================
+@mixin description {
+    color: $text__color;
+    font-size: 16px;
+    @include primary__regular;
+}
