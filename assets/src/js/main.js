@@ -1,5 +1,15 @@
 
 
+// FOR NAVBAR FIXED
+$(window).on("scroll", function(){
+  var scrolling = $(this).scrollTop();
+  if (scrolling){
+      $(".header").addClass("fixed");
+  }else{
+      $(".header").removeClass("fixed");
+  }
+});
+
 
 // FOR NAVBAR ACTIVE MENU
 $(".nav-item").on("click", function(){

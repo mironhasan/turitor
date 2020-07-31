@@ -37,7 +37,7 @@ $('.testi__slider').slick({
         }
       }
     ]
-  });
+});
 
 
 
@@ -77,4 +77,43 @@ $('.instruct__slider').slick({
       }
     }
   ]
+});
+
+
+// FOR PARTNER SECTION
+$('.partner__slider').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    speed: 1000,
+    prevArrow: '<i class="flaticon-right-arrow dandik"></i>',
+    nextArrow: '<i class="flaticon-left-arrow bamdik"></i>',
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
 });
