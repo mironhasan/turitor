@@ -4,68 +4,82 @@
 // =====================================
 //         HEADER PART START
 //======================================
+
+.header-part {
+    background: $header__bg;
+    height: 100px;
+}
+
+.header {
+    .container {
+        max-width: 1325px;
+
+        .row {
+            @include flex__center;
+            justify-content: space-between;
+        }
+    }
+}
+
 .fixed {
     position: fixed;
     width: 100%;
     z-index: 3;
-    box-shadow: 0px 3px 15px rgba(85, 85, 85, 0.2);
+    box-shadow: 0px 15px 25px rgba(85, 85, 85, 0.2);
+    background: $header__bg;
 }
 
-#header__part {
-    background: $header__bg;
+.navbar-brand {
+    padding: 22px 0px;
+}
 
-    .container {
-        max-width: 1325px;
+.header-logo {
+    width: 170px;
+    height: auto;
+}
 
-        .navbar-brand {
-            padding: 22px 0px;
+.header-middle {
+    padding: 25px 0px;
+    @include flex__center;
+}
 
-            .header__logo {
-                width: 170px;
-                height: auto;
-            }
-        }
+.header-cat {
+    position: relative;
 
-        .header__middle {
-            padding: 25px 0px;
-            @include flex__center;
+    .btn {
+        border-radius: 0px;
+    }
 
-            .header__cat {
-                position: relative;
-
-                &:hover {
-                    .dropdown-menu {
-                        visibility: visible;
-                        opacity: 1;
-                        top: 100%;
-                    }
-                }
-
-                .btn {
-                    padding: 12px 20px;
-                    background: #1f3052;
-                    color: $wh__color;
-                    font-size: 12px;
-                    @include primary__regular;
-                    text-transform: uppercase;
-                    border: none;
-
-                    img {
-                        width: auto;
-                        height: 14px;
-                        margin-right: 8px;
-                        margin-bottom: 2px;
-                    }
-
-                    &::after {
-                        display: none;
-                    }
-                }
-
-                .dropdown-menu {
-                    top: 200%;
-                }
-            }
+    &:hover {
+        .dropdown-menu {
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
         }
     }
+
+    .btn {
+        padding: 12px 20px;
+        background: #1f3052;
+        color: $wh__color;
+        font-size: 12px;
+        @include primary__regular;
+        text-transform: uppercase;
+        border: none;
+
+        img {
+            width: auto;
+            height: 14px;
+            margin-right: 8px;
+            margin-bottom: 2px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.dropdown-menu {
+    top: 200%;
 }

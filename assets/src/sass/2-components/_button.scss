@@ -4,7 +4,7 @@
 //=====================================
 //         ALL BUTTON STYLE
 //=====================================  
-.btn__link {
+.btn {
     background-color: $brand__color;
     padding: 14px 30px 15px 30px;
     border-radius: 36px;
@@ -14,13 +14,26 @@
     @include thirdary__bold;
     text-transform: uppercase;
     @include cursor__transition;
+
+    &:hover {
+        color: $brand__color;
+        background: $wh__color;
+        border-color: $brand__color;
+    }
+
+    i {
+        margin-right: 10px;
+    }
 }
 
-.btn__link i {
-    margin-right: 10px;
-}
-
-.btn__link:hover {
+.btn-outline-primary {
     color: $brand__color;
     background: $wh__color;
+    margin-left: 20px;
+
+    &:hover {
+        color: $wh__color;
+        background: $brand__color;
+        border-color: $brand__color;
+    }
 }

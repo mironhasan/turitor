@@ -5,7 +5,7 @@
 // =====================================
 //         INDEX SUBJECT CARD
 //======================================
-.subject__card {
+.subject-card {
     width: 100%;
     padding: 50px 30px 45px;
     border-radius: 15px;
@@ -14,50 +14,14 @@
     text-align: center;
     position: relative;
 
-    &:hover {
-        box-shadow: 0 30px 50px 0 rgba(51, 51, 51, 0.08);
-        border-color: transparent;
-
-        .top__shape {
-            left: -15px;
-            top: -15px;
-            transform: scale(1);
-        }
-
-        .bottom__shape {
-            right: -15px;
-            bottom: -15px;
-            transform: scale(1);
-        }
-
-        .sub__img {
-            transform: scale(0.9);
-        }
-    }
-
-    .sub__img {
-        margin-bottom: 27px;
-        width: 120px;
-        height: auto;
-        border-radius: 50%;
-        transform: scale(1);
-        @include cursor__transition;
-    }
-
-    .sub__title {
-        color: $heading__color;
+    h3 {
         font-size: 22px;
-        @include secondary__bold;
         text-transform: capitalize;
     }
 
-    .sub__outline {
-        @include description;
-        margin-top: 8px;
-    }
-
-    .top__shape {
+    &::before {
         background-color: #0eb582;
+        content: "";
         position: absolute;
         display: block;
         height: 60px;
@@ -70,8 +34,11 @@
         @include cursor__transition;
     }
 
-    .bottom__shape {
+    &::after {
+        background: url(../../images/subjects/bottom_bg.png);
+        background-repeat: no-repeat;
         position: absolute;
+        content: "";
         height: 60px;
         width: 60px;
         right: 0px;
@@ -81,4 +48,34 @@
         transform: scale(0);
         @include cursor__transition;
     }
+
+    &:hover {
+        box-shadow: 0 30px 50px 0 rgba(51, 51, 51, 0.08);
+        border-color: transparent;
+
+        &::before {
+            left: -15px;
+            top: -15px;
+            transform: scale(1);
+        }
+
+        &::after {
+            right: -15px;
+            bottom: -15px;
+            transform: scale(1);
+        }
+
+        .sub-img {
+            transform: scale(0.9);
+        }
+    }
+}
+
+.sub-img {
+    margin-bottom: 27px;
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    @include cursor__transition;
 }

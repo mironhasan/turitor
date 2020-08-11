@@ -2,7 +2,7 @@
 
 
 // 
-$('.counter__number').counterUp({
-    delay: 50,
+$('.count').counterUp({
+    delay: 80,
     time: 1500
 });

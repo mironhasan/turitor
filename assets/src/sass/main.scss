@@ -1,12 +1,50 @@
 
+/*
+Author: XpeedStudio
+Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+*/
 
+/*============================ Table Of Content index page ==================================
+
+1. Navbar
+2. Banner
+3. Counter
+4. Popular
+5. Feature
+6. Testimonial
+7. Instructor
+8. Partner
+9. News & Event
+10. Become
+11. Newsletter
+12. Footer
+
+=================================== elemnt content ==============================
+
+1. Button Element
+2. Form Element
+3. Dropdown Element
+4. Navber Element
+5. Section heading Element
+6. Subject Card Elemnt
+7. Feature card Element
+
+======================================================================*/
 
 
 // 1 - HELPERS FOLDER
+
+/*===================================
+            GOOGLE FONTS
+=====================================*/
 @import "./1-helpers/_font.scss";
-@import "./1-helpers/_common.scss";
+
+/*===================================
+            ALL COMMON CSS
+=====================================*/
 @import "./1-helpers/_variable.scss";
 @import "./1-helpers/_mixin.scss";
+@import "./1-helpers/_common.scss";
 
 
 // 2 - COMPONENTS
@@ -14,12 +52,20 @@
 @import "./2-components/_form.scss";
 @import "./2-components/_dropdown.scss";
 @import "./2-components/_navbar.scss";
+@import "./2-components/_heading.scss";
 @import "./2-components/_subject-card.scss";
 @import "./2-components/_feature-card.scss";
 
 
 // 3 - LAYOUTS
+/*===================================
+            HEADER SECTION
+=====================================*/
 @import "./3-layouts/_header.scss";
+
+/*===================================
+            FOOTER SECTION
+=====================================*/
 @import "./3-layouts/_footer.scss";
 
 

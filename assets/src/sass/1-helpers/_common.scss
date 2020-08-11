@@ -9,6 +9,61 @@
     outline: 0;
 }
 
+body {
+    line-height: 26px;
+    overflow-x: hidden;
+    color: $text__color;
+    font-size: $sm__size;
+    font-weight: $regular__weight;
+    font-family: $primary__family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading__color;
+    font-weight: $bold__weight;
+    font-family: $secondary__family;
+}
+
+h1 {
+    font-size: $xlg__size;
+    line-height: 60px;
+}
+
+h2 {
+    font-size: $lg__size;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: $xmd__size;
+}
+
+h4 {
+    color: $wh__color;
+    font-size: $md__size;
+    text-transform: uppercase;
+}
+
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+button:focus,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+  outline: none;
+  -moz-outline: none;
+}
+
 img {
     vertical-align: middle;
 }
@@ -17,32 +72,11 @@ ul,
 ol {
     list-style: none;
     display: inline-block;
+    margin-bottom: 0px;
 }
 
 a {
-    text-decoration: none;
     display: inline-block;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-button:focus {
-    outline: none !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li,
-span {
-    margin-bottom: 0px !important;
 }
 
 html,
@@ -50,22 +84,6 @@ body{
     scroll-behavior: smooth;
 }
 
-.heading {
-    color: #777777;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Rubik', sans-serif;
-}
-
-.title {
-    color: #333333;
-    font-size: 42px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    text-transform: capitalize;
-    margin-top: 10px;
-}
-
-.m__updown {
+.m-updown {
     margin: 65px 0px 30px;
 }

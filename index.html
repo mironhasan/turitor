@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- FOR WEB PAGE TITLE -->
+    <!-- BASIC PAGE NEEDS -->
+    <meta charset="UTF-8">
     <title>Turitor</title>
+
+    <!-- MOBILE SPECIFIC MATES -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
     <!--===================================
                CSS LINK PART STRAT
     =====================================-->
+    <!-- FOR FONTAWESOME ICON -->
     <link rel="stylesheet" href="./assets/icon/font-awesome/all.min.css">
+
+    <!-- FOR SLICK SLIDER -->
     <link rel="stylesheet" href="./assets/src/css/slick.css">
+
+    <!-- FOR BOOTSTRAP -->
     <link rel="stylesheet" href="./assets/src/css/bootstrap.min.css">
+
+    <!-- FOR RESPONSIVE -->
     <link rel="stylesheet" href="./assets/src/css/responsive.css">
-    <link rel="stylesheet" href="./assets/src/sass/main.css">
+
+    <!-- FOR TEMPLATE STYLE -->
+    <link rel="stylesheet" href="./assets/src/css/main.css">
     <!--===================================
                CSS LINK PART END
     =====================================-->
@@ -23,33 +35,31 @@
     <!--===================================
                 NAVBAR PART START
     =====================================-->
-    <header id="header__part" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
+    <header class="header-part">
+        <div class="header">
+            <div class="container">
+                <div class="row">
                     <a class="navbar-brand" href="#">
-                        <img class="header__logo" src="./assets/images/logo/logo.png" alt="logo">
+                        <img class="header-logo" src="./assets/images/logo/logo.png" alt="logo">
                     </a>
-                </div>
-                <div class="col-lg-3">
-                    <div class="header__middle">
-                        <div class="dropdown header__cat">
+    
+                    <div class="header-middle">
+                        <div class="dropdown header-cat">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/images/svg/humburger_2.svg" alt="humburger_2">
                                 categories
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">art & design</a>
-                                <a class="dropdown-item" href="#">architecture</a>
-                                <a class="dropdown-item" href="#">business study</a>
-                                <a class="dropdown-item" href="#">computer science</a>
-                                <a class="dropdown-item" href="#">web development</a>
-                                <a class="dropdown-item" href="#">data science</a>
-                                <a class="dropdown-item" href="#">engineering</a>
-                                <a class="dropdown-item" href="#">mathmatics</a>
-                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">art & design</a></li>
+                                <li><a class="dropdown-item" href="#">architecture</a></li>
+                                <li><a class="dropdown-item" href="#">business study</a></li>
+                                <li><a class="dropdown-item" href="#">computer science</a></li>
+                                <li><a class="dropdown-item" href="#">web development</a></li>
+                                <li><a class="dropdown-item" href="#">data science</a></li>
+                                <li><a class="dropdown-item" href="#">engineering</a></li>
+                                <li><a class="dropdown-item" href="#">mathmatics</a></li>
+                            </ul>
                         </div>
-
                         <form class="form-inline">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -57,14 +67,11 @@
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                         </form>
                     </div>
-                </div>
-
-                <div class="col-lg-7">
+    
                     <nav class="navbar navbar-expand-lg">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
-                      
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
@@ -72,20 +79,22 @@
                                         Home
                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">home 1</a>
-                                        <a class="dropdown-item" href="#">home 2</a>
-                                        <a class="dropdown-item" href="#">home 3</a>
-                                        <a class="dropdown-item" href="#">home 4</a>
-                                        <a class="dropdown-item" href="#">home 5</a>
-                                        <a class="dropdown-item" href="#">home 6</a>
-                                        <a class="dropdown-item" href="#">
-                                            home classic 
-                                            <span class="new__item">(new)</span>
-                                        </a>
-                                        <a class="dropdown-item" href="#">home university</a>
-                                        <a class="dropdown-item" href="#">home kindrgarten</a>
-                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">home 1</a></li>
+                                        <li><a class="dropdown-item" href="#">home 2</a></li>
+                                        <li><a class="dropdown-item" href="#">home 3</a></li>
+                                        <li><a class="dropdown-item" href="#">home 4</a></li>
+                                        <li><a class="dropdown-item" href="#">home 5</a></li>
+                                        <li><a class="dropdown-item" href="#">home 6</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                home classic
+                                                <span class="new-item">(new)</span>
+                                            </a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">home university</a></li>
+                                        <li><a class="dropdown-item" href="#">home kindrgarten</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">about</a>
@@ -95,55 +104,55 @@
                                         course
                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">course style 1</a>
-                                        <a class="dropdown-item" href="#">course style 1</a>
-                                        <a class="dropdown-item" href="#">course load more</a>
-                                        <a class="dropdown-item" href="#">course single</a>
-                                        <a class="dropdown-item" href="#">lesson single</a>
-                                        <a class="dropdown-item" href="#">zoom meeting</a>
-                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">course style 1</a></li>
+                                        <li><a class="dropdown-item" href="#">course style 1</a></li>
+                                        <li><a class="dropdown-item" href="#">course load more</a></li>
+                                        <li><a class="dropdown-item" href="#">course single</a></li>
+                                        <li><a class="dropdown-item" href="#">lesson single</a></li>
+                                        <li><a class="dropdown-item" href="#">zoom meeting</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         pages
                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">become an instructor</a>
-                                        <a class="dropdown-item" href="#">instructor</a>
-                                        <a class="dropdown-item" href="#">instructor profile</a>
-                                        <a class="dropdown-item" href="#">gallery</a>
-                                        <a class="dropdown-item" href="#">pricing</a>
-                                        <a class="dropdown-item" href="#">faq</a>
-                                        <a class="dropdown-item" href="#">404</a>
-                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">become an instructor</a></li>
+                                        <li><a class="dropdown-item" href="#">instructor</a></li>
+                                        <li><a class="dropdown-item" href="#">instructor profile</a></li>
+                                        <li><a class="dropdown-item" href="#">gallery</a></li>
+                                        <li><a class="dropdown-item" href="#">pricing</a></li>
+                                        <li><a class="dropdown-item" href="#">faq</a></li>
+                                        <li><a class="dropdown-item" href="#">404</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         blog
                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">blog list</a>
-                                        <a class="dropdown-item" href="#">blog single</a>
-                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">blog list</a></li>
+                                        <li><a class="dropdown-item" href="#">blog single</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">contact</a>
                                 </li>
                             </ul>
-
-                            <ul class="header__icon">
-                                <li class="icon__item header__user">
-                                    <a class="icon__link" href="#"><i class="fas fa-user"></i></a>
+    
+                            <ul class="header-icon">
+                                <li class="icon-item header-user">
+                                    <a class="icon-link" href="#"><i class="fas fa-user"></i></a>
                                 </li>
-                                <li class="icon__item header__cart">
-                                    <a class="icon__link" href="#"><i class="fas fa-shopping-cart"></i></a>
-                                    <span class="icon__notify">0</span>
+                                <li class="icon-item header-cart">
+                                    <a class="icon-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <span class="icon-notify">0</span>
                                 </li>
-                                <li class="icon__item header__bar">
-                                    <a class="icon__link__bar" href="#"><i class="fas fa-bars"></i></a>
+                                <li class="icon-item header-bar">
+                                    <a class="icon-link-bar" href="#"><i class="fas fa-bars"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -160,23 +169,29 @@
     <!--===================================
                 BANNER PART START
     =====================================-->
-    <section id="banner__part">
-        <img class="banner__shape" src="assets/images/banner/banner_shape.png" alt="banner_shape">
-        <img class="banner__img" src="assets/images/banner/banner_image.png" alt="banner_image">
+    <section class="banner-part">
+        <img class="banner-shape" src="assets/images/banner/banner_shape.png" alt="banner_shape">
+        <img class="banner-img" src="assets/images/banner/banner_image.png" alt="banner_image">
         <div class="container">
-            <div class="banner__content">
-                <h2 class="banner__heading"># Improving lives through learning</h2>
-                <h1 class="banner__title">Learn Anytime, Anywhere. Accelerate Your Future.</h1>
-                <p class="banner__text">We believe everyone has the capacity to be creative. Eduzion is a place where people develop their own potential.</p>
-                <div class="banner__btn">
-                    <a class="btn__link" href="#">
-                        <i class="fas fa-plus-circle"></i>
-                        view course
-                    </a>
-                    <a class="btn__link" href="#">
-                        <i class="fas fa-user-plus"></i>
-                        start trial
-                    </a>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="banner-content">
+                        <h1>
+                            <span class="title"># Improving lives through learning</span>
+                            Learn Anytime, Anywhere. Accelerate Your Future.
+                        </h1>
+                        <p>We believe everyone has the capacity to be creative. Eduzion is a place where people develop their own potential.</p>
+                        <div class="banner-btn">
+                            <a class="btn btn-primary" href="#">
+                                <i class="fas fa-plus-circle"></i>
+                                view course
+                            </a>
+                            <a class="btn btn-outline-primary" href="#">
+                                <i class="fas fa-user-plus"></i>
+                                start trial
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,36 +204,36 @@
     <!--===================================
                 COUNTER PART START
     =====================================-->
-    <section id="counter__part">
+    <section class="counter-part">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="counter__div">
-                        <span class="counter__number">506</span>
-                        <span class="counter__plus">+</span>
-                        <p class="counter__text">Courses & videos</p>
+                <div class="col-lg-3 text-center">
+                    <div class="counter-number">
+                        <h3 class="count">506</h3>
+                        <h3>+</h3>
                     </div>
+                    <p>Courses & videos</p>
                 </div>
-                <div class="col-lg-3">
-                    <div class="counter__div">
-                        <span class="counter__number">265</span>
-                        <span class="counter__plus">+</span>
-                        <p class="counter__text">Expert teachers</p>
+                <div class="col-lg-3 text-center">
+                    <div class="counter-number">
+                        <h3 class="count">265</h3>
+                        <h3 class="counter-plus">+</h3>
                     </div>
+                    <p>Expert teachers</p>
                 </div>
-                <div class="col-lg-3">
-                    <div class="counter__div">
-                        <span class="counter__number">4506</span>
-                        <span class="counter__plus">+</span>
-                        <p class="counter__text">Students</p>
+                <div class="col-lg-3 text-center">
+                    <div class="counter-number">
+                        <h3 class="count">4506</h3>
+                        <h3 class="counter-plus">+</h3>
                     </div>
+                    <p>Students</p>
                 </div>
-                <div class="col-lg-3">
-                    <div class="counter__div">
-                        <span class="counter__number">310</span>
-                        <span class="counter__plus">+</span>
-                        <p class="counter__text">Classes complete</p>
+                <div class="col-lg-3 text-center">
+                    <div class="counter-number">
+                        <h3 class="count">310</h3>
+                        <h3 class="counter-plus">+</h3>
                     </div>
+                    <p>Classes complete</p>
                 </div>
             </div>
         </div>
@@ -231,96 +246,84 @@
     <!--===================================
                 POPULAR PART START
     =====================================-->
-    <section id="popular__part">
+    <section class="popular-part">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="popular__heading">
-                        <h3 class="heading"># Top categories</h3>
-                        <h2 class="title">Popular subjects</h2>
+                    <div class="heading">
+                        <h2>
+                            <span class="title"># Top categories</span>
+                            Popular subjects
+                        </h2>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <p class="popular__descrip">Online learning offers a new way to explore subjects you’re passionate about.</p>
+                    <div class="heading-describe">
+                        <p>Online learning offers a new way to explore subjects you’re passionate about.</p>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="popular__btn">
-                        <a class="btn__link" href="#">
+                    <div class="heading-btn">
+                        <a class="btn btn-primary" href="#">
                             <i class="fas fa-eye"></i>
                             view all
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="subject__card m__updown">
-                        <img class="sub__img" src="assets/images/subjects/sub_1.png" alt="sub_1">
-                        <h3 class="sub__title">computer science</h3>
-                        <p class="sub__outline">27 courses</p>
-                        <span class="top__shape"></span>
-                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    <div class="subject-card m-updown">
+                        <img class="sub-img" src="assets/images/subjects/sub_1.png" alt="sub_1">
+                        <h3>computer science</h3>
+                        <p>27 courses</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="subject__card m__updown">
-                        <img class="sub__img" src="assets/images/subjects/sub_2.png" alt="sub_2">
-                        <h3 class="sub__title">web development</h3>
-                        <p class="sub__outline">43 courses</p>
-                        <span class="top__shape"></span>
-                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    <div class="subject-card m-updown">
+                        <img class="sub-img" src="assets/images/subjects/sub_2.png" alt="sub_2">
+                        <h3>web development</h3>
+                        <p>43 courses</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="subject__card m__updown">
-                        <img class="sub__img" src="assets/images/subjects/sub_3.png" alt="sub_3">
-                        <h3 class="sub__title">data science</h3>
-                        <p class="sub__outline">16 courses</p>
-                        <span class="top__shape"></span>
-                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    <div class="subject-card m-updown">
+                        <img class="sub-img" src="assets/images/subjects/sub_3.png" alt="sub_3">
+                        <h3>data science</h3>
+                        <p>16 courses</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="subject__card m__updown">
-                        <img class="sub__img" src="assets/images/subjects/sub_4.png" alt="sub_4">
-                        <h3 class="sub__title">engineering</h3>
-                        <p class="sub__outline">57 courses</p>
-                        <span class="top__shape"></span>
-                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    <div class="subject-card m-updown">
+                        <img class="sub-img" src="assets/images/subjects/sub_4.png" alt="sub_4">
+                        <h3>engineering</h3>
+                        <p>57 courses</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="subject__card">
-                        <img class="sub__img" src="assets/images/subjects/sub_5.png" alt="sub_5">
-                        <h3 class="sub__title">architecture</h3>
-                        <p class="sub__outline">24 courses</p>
-                        <span class="top__shape"></span>
-                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    <div class="subject-card">
+                        <img class="sub-img" src="assets/images/subjects/sub_5.png" alt="sub_5">
+                        <h3>architecture</h3>
+                        <p>24 courses</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="subject__card">
-                        <img class="sub__img" src="assets/images/subjects/sub_6.png" alt="sub_6">
-                        <h3 class="sub__title">art & design</h3>
-                        <p class="sub__outline">31 courses</p>
-                        <span class="top__shape"></span>
-                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    <div class="subject-card">
+                        <img class="sub-img" src="assets/images/subjects/sub_6.png" alt="sub_6">
+                        <h3>art & design</h3>
+                        <p>31 courses</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="subject__card">
-                        <img class="sub__img" src="assets/images/subjects/sub_7.png" alt="sub_7">
-                        <h3 class="sub__title">mathmatics</h3>
-                        <p class="sub__outline">29 courses</p>
-                        <span class="top__shape"></span>
-                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    <div class="subject-card">
+                        <img class="sub-img" src="assets/images/subjects/sub_7.png" alt="sub_7">
+                        <h3>mathmatics</h3>
+                        <p>29 courses</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="subject__card">
-                        <img class="sub__img" src="assets/images/subjects/sub_8.png" alt="sub_8">
-                        <h3 class="sub__title">business study</h3>
-                        <p class="sub__outline">48 courses</p>
-                        <span class="top__shape"></span>
-                        <img class="bottom__shape" src="assets/images/subjects/bottom_bg.png" alt="bottom_bg">
+                    <div class="subject-card">
+                        <img class="sub-img" src="assets/images/subjects/sub_8.png" alt="sub_8">
+                        <h3>business study</h3>
+                        <p>48 courses</p>
                     </div>
                 </div>
             </div>
@@ -334,28 +337,32 @@
     <!--===================================
                 FEATURE PART START
     =====================================-->
-    <section id="feature__part">
+    <section class="feature-part">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="feature__heading">
-                        <h3 class="heading"># Top categories</h3>
-                        <h2 class="title">Popular subjects</h2>
+                    <div class="heading">
+                        <h2>
+                            <span class="title"># Top courses</span>
+                            featured courses
+                        </h2>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <p class="feature__descrip">Online learning offers a new way to explore subjects you’re passionate about.</p>
+                    <div class="heading-describe">
+                        <p>Online learning offers a new way to explore subjects you’re passionate about.</p>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="feature__btn">
-                        <a class="btn__link" href="#">
+                    <div class="heading-btn">
+                        <a class="btn btn-primary" href="#">
                             <i class="fas fa-eye"></i>
                             view all
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-10 offset-1">
-                    <div class="feature__menu">
+                <div class="col-lg-10 mx-auto">
+                    <div class="feature-menu">
                         <button class="menu active" type="button" data-filter="all">All Categories</button>
                         <button class="menu" type="button" data-filter=".data">Data and Tech</button>
                         <button class="menu" type="button" data-filter=".digit">Digital Marketing</button>
@@ -364,30 +371,30 @@
                     </div>
                 </div>
             </div>
-            <div class="row feature__plugin">
+            <div class="row feature-plugin">
                 <div class="col-lg-4 mix art" data-order="1">
-                    <div class="feature__card">
-                        <img class="feature__card__img" src="assets/images/course/course_1.png" alt="course_1">
-                        <a class="feature__card__title" href="#">psychology</a>
-                        <h3 class="feature__card__heading">Buddhism and Modern Psychology </h3>
-                        <ul class="feature__card__enroll">
-                            <li class="enroll__item">
+                    <div class="feature-card">
+                        <img class="feature-card-img" src="assets/images/course/course_1.png" alt="course_1">
+                        <a class="feature-card-title" href="#">psychology</a>
+                        <h3 class="feature-card-heading"><a href="#">Buddhism and Modern Psychology</a></h3>
+                        <ul class="feature-card-enroll">
+                            <li class="enroll-item">
                                 <i class="fas fa-file"></i>
                                 <span>lesson</span>
                             </li>
-                            <li class="enroll__item">
+                            <li class="enroll-item">
                                 <i class="fas fa-user-friends"></i>
                                 <span>50</span>
                             </li>
                         </ul>
-                        <div class="feature__author">
-                            <a class="author__img" href="#">
+                        <div class="feature-author">
+                            <a class="author-img" href="#">
                                 <img src="assets/images/course/author_1.png" alt="author_1">
                             </a>
-                            <a class="author__name">Victor Valdes</a>
+                            <a class="author-name">Victor Valdes</a>
                         </div>
-                        <ul class="feature__course__details">
-                            <li class="feature__rating">
+                        <ul class="feature-course-details">
+                            <li class="feature-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -395,177 +402,177 @@
                                 <i class="fas fa-star-half-alt"></i>
                                 <span class="rating__count">(136)</span>
                             </li>
-                            <li class="feature__price">$399</li>
+                            <li class="feature-price">$399</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 mix busi" data-order="2">
-                    <div class="feature__card">
-                        <img class="feature__card__img" src="assets/images/course/course_2.png" alt="course_2">
-                        <a class="feature__card__title" href="#">Data and Tech</a>
-                        <h3 class="feature__card__heading">Achieving Advanced Insights with BigQuery</h3>
-                        <ul class="feature__card__enroll">
-                            <li class="enroll__item">
+                    <div class="feature-card">
+                        <img class="feature-card-img" src="assets/images/course/course_2.png" alt="course_2">
+                        <a class="feature-card-title" href="#">Data and Tech</a>
+                        <h3 class="feature-card-heading"><a href="#">Achieving Advanced Insights with BigQuery</a></h3>
+                        <ul class="feature-card-enroll">
+                            <li class="enroll-item">
                                 <i class="fas fa-file"></i>
                                 <span>lesson</span>
                             </li>
-                            <li class="enroll__item">
+                            <li class="enroll-item">
                                 <i class="fas fa-user-friends"></i>
                                 <span>50</span>
                             </li>
                         </ul>
-                        <div class="feature__author">
-                            <a class="author__img" href="#">
+                        <div class="feature-author">
+                            <a class="author-img" href="#">
                                 <img src="assets/images/course/author_1.png" alt="author_1">
                             </a>
-                            <a class="author__name">Victor Valdes</a>
+                            <a class="author-name">Victor Valdes</a>
                         </div>
-                        <ul class="feature__course__details">
-                            <li class="feature__rating">
+                        <ul class="feature-course-details">
+                            <li class="feature-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                <span class="rating__count">(136)</span>
+                                <span class="rating-count">(136)</span>
                             </li>
-                            <li class="feature__price">$399</li>
+                            <li class="feature-price">$399</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 mix data" data-order="3">
-                    <div class="feature__card">
-                        <img class="feature__card__img" src="assets/images/course/course_3.png" alt="course_3">
-                        <a class="feature__card__title" href="#">Business Study</a>
-                        <h3 class="feature__card__heading">Competitive Strategy and Organization</h3>
-                        <ul class="feature__card__enroll">
-                            <li class="enroll__item">
+                    <div class="feature-card">
+                        <img class="feature-card-img" src="assets/images/course/course_3.png" alt="course_3">
+                        <a class="feature-card-title" href="#">Business Study</a>
+                        <h3 class="feature-card-heading"><a href="#">Competitive Strategy and Organization</a></h3>
+                        <ul class="feature-card-enroll">
+                            <li class="enroll-item">
                                 <i class="fas fa-file"></i>
                                 <span>lesson</span>
                             </li>
-                            <li class="enroll__item">
+                            <li class="enroll-item">
                                 <i class="fas fa-user-friends"></i>
                                 <span>50</span>
                             </li>
                         </ul>
-                        <div class="feature__author">
-                            <a class="author__img" href="#">
+                        <div class="feature-author">
+                            <a class="author-img" href="#">
                                 <img src="assets/images/course/author_1.png" alt="author_1">
                             </a>
-                            <a class="author__name">Victor Valdes</a>
+                            <a class="author-name">Victor Valdes</a>
                         </div>
-                        <ul class="feature__course__details">
-                            <li class="feature__rating">
+                        <ul class="feature-course-details">
+                            <li class="feature-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                <span class="rating__count">(136)</span>
+                                <span class="rating-count">(136)</span>
                             </li>
-                            <li class="feature__price">$399</li>
+                            <li class="feature-price">$399</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 mix digit" data-order="4">
-                    <div class="feature__card">
-                        <img class="feature__card__img" src="assets/images/course/course_4.png" alt="course_4">
-                        <a class="feature__card__title" href="#">psychology</a>
-                        <h3 class="feature__card__heading">Buddhism and Modern Psychology </h3>
-                        <ul class="feature__card__enroll">
-                            <li class="enroll__item">
+                    <div class="feature-card">
+                        <img class="feature-card-img" src="assets/images/course/course_4.png" alt="course_4">
+                        <a class="feature-card-title" href="#">psychology</a>
+                        <h3 class="feature-card-heading"><a href="#">Buddhism and Modern Psychology</a></h3>
+                        <ul class="feature-card-enroll">
+                            <li class="enroll-item">
                                 <i class="fas fa-file"></i>
                                 <span>lesson</span>
                             </li>
-                            <li class="enroll__item">
+                            <li class="enroll-item">
                                 <i class="fas fa-user-friends"></i>
                                 <span>50</span>
                             </li>
                         </ul>
-                        <div class="feature__author">
-                            <a class="author__img" href="#">
+                        <div class="feature-author">
+                            <a class="author-img" href="#">
                                 <img src="assets/images/course/author_1.png" alt="author_1">
                             </a>
-                            <a class="author__name">Victor Valdes</a>
+                            <a class="author-name">Victor Valdes</a>
                         </div>
-                        <ul class="feature__course__details">
-                            <li class="feature__rating">
+                        <ul class="feature-course-details">
+                            <li class="feature-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                <span class="rating__count">(136)</span>
+                                <span class="rating-count">(136)</span>
                             </li>
-                            <li class="feature__price">$399</li>
+                            <li class="feature-price">$399</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 mix art" data-order="5">
-                    <div class="feature__card">
-                        <img class="feature__card__img" src="assets/images/course/course_5.png" alt="course_5">
-                        <a class="feature__card__title" href="#">psychology</a>
-                        <h3 class="feature__card__heading">Buddhism and Modern Psychology </h3>
-                        <ul class="feature__card__enroll">
-                            <li class="enroll__item">
+                    <div class="feature-card">
+                        <img class="feature-card-img" src="assets/images/course/course_5.png" alt="course_5">
+                        <a class="feature-card-title" href="#">psychology</a>
+                        <h3 class="feature-card-heading"><a href="#">Buddhism and Modern Psychology</a></h3>
+                        <ul class="feature-card-enroll">
+                            <li class="enroll-item">
                                 <i class="fas fa-file"></i>
                                 <span>lesson</span>
                             </li>
-                            <li class="enroll__item">
+                            <li class="enroll-item">
                                 <i class="fas fa-user-friends"></i>
                                 <span>50</span>
                             </li>
                         </ul>
-                        <div class="feature__author">
-                            <a class="author__img" href="#">
+                        <div class="feature-author">
+                            <a class="author-img" href="#">
                                 <img src="assets/images/course/author_1.png" alt="author_1">
                             </a>
-                            <a class="author__name">Victor Valdes</a>
+                            <a class="author-name">Victor Valdes</a>
                         </div>
-                        <ul class="feature__course__details">
-                            <li class="feature__rating">
+                        <ul class="feature-course-details">
+                            <li class="feature-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                <span class="rating__count">(136)</span>
+                                <span class="rating-count">(136)</span>
                             </li>
-                            <li class="feature__price">$399</li>
+                            <li class="feature-price">$399</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 mix busi" data-order="6">
-                    <div class="feature__card">
-                        <img class="feature__card__img" src="assets/images/course/course_6.png" alt="course_6">
-                        <a class="feature__card__title" href="#">psychology</a>
-                        <h3 class="feature__card__heading">Buddhism and Modern Psychology </h3>
-                        <ul class="feature__card__enroll">
-                            <li class="enroll__item">
+                    <div class="feature-card">
+                        <img class="feature-card-img" src="assets/images/course/course_6.png" alt="course_6">
+                        <a class="feature-card-title" href="#">psychology</a>
+                        <h3 class="feature-card-heading"><a href="#">Buddhism and Modern Psychology</a></h3>
+                        <ul class="feature-card-enroll">
+                            <li class="enroll-item">
                                 <i class="fas fa-file"></i>
                                 <span>lesson</span>
                             </li>
-                            <li class="enroll__item">
+                            <li class="enroll-item">
                                 <i class="fas fa-user-friends"></i>
                                 <span>50</span>
                             </li>
                         </ul>
-                        <div class="feature__author">
-                            <a class="author__img" href="#">
+                        <div class="feature-author">
+                            <a class="author-img" href="#">
                                 <img src="assets/images/course/author_1.png" alt="author_1">
                             </a>
-                            <a class="author__name">Victor Valdes</a>
+                            <a class="author-name">Victor Valdes</a>
                         </div>
-                        <ul class="feature__course__details">
-                            <li class="feature__rating">
+                        <ul class="feature-course-details">
+                            <li class="feature-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                <span class="rating__count">(136)</span>
+                                <span class="rating-count">(136)</span>
                             </li>
-                            <li class="feature__price">$399</li>
+                            <li class="feature-price">$399</li>
                         </ul>
                     </div>
                 </div>
@@ -580,77 +587,71 @@
     <!--===================================
             TESTIMONIAL PART START
     =====================================-->
-    <section id="testi__part">
+    <section class="testi-part">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="testi__content">
-                        <div class="testi__heading">
-                            <h3 class="heading"># Testimonials</h3>
-                            <h2 class="title">What Students Says</h2>
+                    <div class="testi-content">
+                        <div class="heading">
+                            <h2>
+                                <span class="title"># Testimonials</span>
+                                What Students Says
+                            </h2>
                         </div>
-                        <p class="testi__descrip">Online learning offers a new way to explore subjects you’re passionate about.</p>
+                        <p>Online learning offers a new way to explore subjects you’re passionate about.</p>
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <div class="testi__slider">
-                        <div class="testi__card">
-                            <div class="testi__says">
-                                <img class="testi__qoute" src="assets/images/testimonial/qoute.png" alt="qoute">
-                                <p class="testi__text">I have a strong coxatrose joint disease caused by worn cartilage in my left hip</p>
+                    <div class="testi-slider">
+                        <div class="testi-card">
+                            <div class="testi-says">
+                                <img src="assets/images/testimonial/qoute.png" alt="qoute">
+                                <p>I have a strong coxatrose joint disease caused by worn cartilage in my left hip</p>
                             </div>
-                            <div class="testi__author">
-                                <div class="testi__author__item">
-                                    <img src="assets/images/testimonial/testi_1.png" alt="testi_1">
-                                </div>
-                                <div class="testi__author__item">
-                                    <h3>Blaise Matuidi</h3>
-                                    <h4>Research Student</h4>
+                            <div class="testi-author">
+                                <img src="assets/images/testimonial/testi_1.png" alt="testi_1">
+                                <div class="testi-author-info">
+                                    <h4>Blaise Matuidi</h4>
+                                    <p>Research Student</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="testi__card">
-                            <div class="testi__says">
-                                <img class="testi__qoute" src="assets/images/testimonial/qoute.png" alt="qoute">
-                                <p class="testi__text">What I learned during Strategic Thinking program gave me exactly what</p>
+                        <div class="testi-card">
+                            <div class="testi-says">
+                                <img src="assets/images/testimonial/qoute.png" alt="qoute">
+                                <p>What I learned during Strategic Thinking program gave me exactly what</p>
                             </div>
-                            <div class="testi__author">
-                                <div class="testi__author__item">
-                                    <img src="assets/images/testimonial/testi_1.png" alt="testi_1">
-                                </div>
-                                <div class="testi__author__item">
-                                    <h3>Mario Mandžukić</h3>
-                                    <h4>Postgraduate Student</h4>
+                            <div class="testi-author">
+                                <img src="assets/images/testimonial/testi_1.png" alt="testi_1">
+                                <div class="testi-author-info">
+                                    <h4>Mario Mandžukić</h4>
+                                    <p>Postgraduate Student</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="testi__card">
-                            <div class="testi__says">
-                                <img class="testi__qoute" src="assets/images/testimonial/qoute.png" alt="qoute">
-                                <p class="testi__text">I have a strong coxatrose joint disease caused by worn cartilage in my left hip</p>
+                        <div class="testi-card">
+                            <div class="testi-says">
+                                <img src="assets/images/testimonial/qoute.png" alt="qoute">
+                                <p>I have a strong coxatrose joint disease caused by worn cartilage in my left hip</p>
                             </div>
-                            <div class="testi__author">
-                                <div class="testi__author__item">
-                                    <img src="assets/images/testimonial/testi_2.png" alt="testi_2">
-                                </div>
-                                <div class="testi__author__item">
-                                    <h3>Blaise Matuidi</h3>
-                                    <h4>Research Student</h4>
+                            <div class="testi-author">
+                                <img src="assets/images/testimonial/testi_2.png" alt="testi_2">
+                                <div class="testi-author-info">
+                                    <h4>Blaise Matuidi</h4>
+                                    <p>Research Student</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="testi__card">
-                            <div class="testi__says">
-                                <img class="testi__qoute" src="assets/images/testimonial/qoute.png" alt="qoute">
-                                <p class="testi__text">People program enabled me to be a fuller me, using differe skills and behaviors...</p>
+                        <div class="testi-card">
+                            <div class="testi-says">
+                                <img src="assets/images/testimonial/qoute.png" alt="qoute">
+                                <p>People program enabled me to be a fuller me, using differe skills and behaviors...</p>
                             </div>
-                            <div class="testi__author">
-                                <div class="testi__author__item">
-                                    <img src="assets/images/testimonial/testi_3.png" alt="testi_3">
-                                </div>
-                                <div class="testi__author__item">
-                                    <h3>Mario Mandžukić</h3>
-                                    <h4>Postgraduate Student</h4>
+                            <div class="testi-author">
+                                <img src="assets/images/testimonial/testi_3.png" alt="testi_3">
+                                <div class="testi-author-info">
+                                    <h4>Mario Mandžukić</h4>
+                                    <p>Postgraduate Student</p>
                                 </div>
                             </div>
                         </div>
@@ -667,136 +668,128 @@
     <!--===================================
                INSTRUCTOR PART START
     =====================================-->
-    <section id="instruct__part">
+    <section class="instruct-part">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="instruct__content">
-                        <div class="instruct__heading">
-                            <h3 class="heading"># Instructor</h3>
-                            <h2 class="title">Featured Instructors</h2>
+                    <div class="instruct-content">
+                        <div class="heading">
+                            <h2>
+                                <span class="title"># Instructor</span>
+                                Featured Instructors
+                            </h2>
                         </div>
-                        <p class="instruct__descrip">Discover how to anticipate and adapt to the latest trends and digital</p>
+                        <p>Discover how to anticipate and adapt to the latest trends and digital</p>
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <div class="instruct__slider">
-                        <div class="instruct__card">
-                            <div class="instruct__round">
-                                <div class="round__img">
-                                    <img src="assets/images/instructor/instruct_round_1.png" alt="instruct_round_1">
-                                </div>
-                                <h3 class="round__name">Eric Abidal</h3>
-                                <p class="round__prof">Asst. Professor</p>
-                                <div class="instruct__hover">
-                                    <img src="assets/images/instructor/instructor_1.png" alt="instructor_1">
-                                    <div class="hover__oly">
-                                        <div class="hover__cover">
-                                            <h3>Eric Abidal</h3>
-                                            <p>Asst. Professor</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                            </ul>
-                                        </div>
+                    <div class="instruct-slider">
+                        <div class="instruct-card">
+                            <div class="instruct-img">
+                                <img src="assets/images/instructor/instruct_round_1.png" alt="instruct_round_1">
+                            </div>
+                            <h3 class="instruct-name">Eric Abidal</h3>
+                            <p class="instruct-prof">Asst. Professor</p>
+                            <div class="instruct-hover">
+                                <img src="assets/images/instructor/instructor_1.png" alt="instructor_1">
+                                <div class="instruct-oly">
+                                    <div class="instruct-cover">
+                                        <h3>Eric Abidal</h3>
+                                        <p>Asst. Professor</p>
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="instruct__card">
-                            <div class="instruct__round">
-                                <div class="round__img">
-                                    <img src="assets/images/instructor/instruct_round_3.png" alt="instruct_round_3">
-                                </div>
-                                <h3 class="round__name">Yolanda Cardona</h3>
-                                <p class="round__prof">Professor</p>
-                                <div class="instruct__hover">
-                                    <img src="assets/images/instructor/instructor_3.png" alt="instructor_3">
-                                    <div class="hover__oly">
-                                        <div class="hover__cover">
-                                            <h3>Yolanda Cardona</h3>
-                                            <p>Professor</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                            </ul>
-                                        </div>
+                        <div class="instruct-card">
+                            <div class="instruct-img">
+                                <img src="assets/images/instructor/instruct_round_3.png" alt="instruct_round_3">
+                            </div>
+                            <h3 class="instruct-name">Yolanda Cardona</h3>
+                            <p class="instruct-prof">Professor</p>
+                            <div class="instruct-hover">
+                                <img src="assets/images/instructor/instructor_3.png" alt="instructor_3">
+                                <div class="instruct-oly">
+                                    <div class="instruct-cover">
+                                        <h3>Yolanda Cardona</h3>
+                                        <p>Professor</p>
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="instruct__card">
-                            <div class="instruct__round">
-                                <div class="round__img">
-                                    <img src="assets/images/instructor/instruct_round_2.png" alt="instruct_round_2">
-                                </div>
-                                <h3 class="round__name">Yolanda Ruiz</h3>
-                                <p class="round__prof">Instructor</p>
-                                <div class="instruct__hover">
-                                    <img src="assets/images/instructor/instructor_2.png" alt="instructor_2">
-                                    <div class="hover__oly">
-                                        <div class="hover__cover">
-                                            <h3>Yolanda Ruiz</h3>
-                                            <p>Instructor</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                            </ul>
-                                        </div>
+                        <div class="instruct-card">
+                            <div class="instruct-img">
+                                <img src="assets/images/instructor/instruct_round_2.png" alt="instruct_round_2">
+                            </div>
+                            <h3 class="instruct-name">Yolanda Ruiz</h3>
+                            <p class="instruct-prof">Instructor</p>
+                            <div class="instruct-hover">
+                                <img src="assets/images/instructor/instructor_2.png" alt="instructor_2">
+                                <div class="instruct-oly">
+                                    <div class="instruct-cover">
+                                        <h3>Yolanda Ruiz</h3>
+                                        <p>Instructor</p>
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="instruct__card">
-                            <div class="instruct__round">
-                                <div class="round__img">
-                                    <img src="assets/images/instructor/instruct_round_4.png" alt="instruct_round_4">
-                                </div>
-                                <h3 class="round__name">Carolina Martin</h3>
-                                <p class="round__prof">Instructor</p>
-                                <div class="instruct__hover">
-                                    <img src="assets/images/instructor/instructor_4.png" alt="instructor_4">
-                                    <div class="hover__oly">
-                                        <div class="hover__cover">
-                                            <h3>Carolina Martin</h3>
-                                            <p>Instructor</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                            </ul>
-                                        </div>
+                        <div class="instruct-card">
+                            <div class="instruct-img">
+                                <img src="assets/images/instructor/instruct_round_4.png" alt="instruct_round_4">
+                            </div>
+                            <h3 class="instruct-name">Carolina Martin</h3>
+                            <p class="instruct-prof">Instructor</p>
+                            <div class="instruct-hover">
+                                <img src="assets/images/instructor/instructor_4.png" alt="instructor_4">
+                                <div class="instruct-oly">
+                                    <div class="instruct-cover">
+                                        <h3>Carolina Martin</h3>
+                                        <p>Instructor</p>
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="instruct__card">
-                            <div class="instruct__round">
-                                <div class="round__img">
-                                    <img src="assets/images/instructor/instruct_round_1.png" alt="instruct_round_1">
-                                </div>
-                                <h3 class="round__name">Yolanda Ruiz</h3>
-                                <p class="round__prof">Professor</p>
-                                <div class="instruct__hover">
-                                    <img src="assets/images/instructor/instructor_1.png" alt="instructor_1">
-                                    <div class="hover__oly">
-                                        <div class="hover__cover">
-                                            <h3>Yolanda Ruiz</h3>
-                                            <p>Professor</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                            </ul>
-                                        </div>
+                        <div class="instruct-card">
+                            <div class="instruct-img">
+                                <img src="assets/images/instructor/instruct_round_1.png" alt="instruct_round_1">
+                            </div>
+                            <h3 class="instruct-name">Yolanda Ruiz</h3>
+                            <p class="instruct-prof">Professor</p>
+                            <div class="instruct-hover">
+                                <img src="assets/images/instructor/instructor_1.png" alt="instructor_1">
+                                <div class="instruct-oly">
+                                    <div class="instruct-cover">
+                                        <h3>Yolanda Ruiz</h3>
+                                        <p>Professor</p>
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -814,16 +807,18 @@
     <!--===================================
                PARTNER PART START
     =====================================-->
-    <section id="partner__part">
+    <section class="partner-part">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="partner__heading">
-                        <h2># Partners</h2>
-                        <h3>Who will you learn with?</h3>
+                    <div class="partner-heading">
+                        <h2>
+                            <span class="title"># Partners</span>
+                            Who will you learn with?
+                        </h2>
                         <p>Online courses, programs and degrees created by leading  universities, business schools and specialist organisations.</p>
                     </div>
-                    <div class="partner__slider">
+                    <div class="partner-slider">
                         <a href="#"><img src="assets/images/partner/partner_1.png" alt="partner_1"></a>
                         <a href="#"><img src="assets/images/partner/partner_2.png" alt="partner_2"></a>
                         <a href="#"><img src="assets/images/partner/partner_3.png" alt="partner_3"></a>
@@ -843,31 +838,33 @@
     <!--===================================
              NEWS & EVENT PART START
     =====================================-->
-    <section id="news__part">
+    <section class="news-part">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="news__content">
-                        <div class="news__heading">
-                            <h3 class="heading"># News</h3>
-                            <h2 class="title">News & Events</h2>
+                    <div class="news-content">
+                        <div class="heading">
+                            <h2>
+                                <span class="title"># News</span>
+                                News & Events
+                            </h2>
                         </div>
-                        <p class="news__descrip">Discover how to anticipate and adapt to the latest trends and digital</p>
+                        <p>Discover how to anticipate and adapt to the latest trends and digital</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="news__card">
-                        <div class="news__card__img">
+                    <div class="news-card">
+                        <div class="news-card-img">
                             <a href="#"><img src="assets/images/news/news1.jpg" alt="news1"></a>
                         </div>
-                        <div class="news__card__content">
-                            <div class="news__meta">
-                                <span class="meta__cat"> Music & Arts</span>
-                                <span class="meta__date">25, november, 2020</span>
+                        <div class="news-card-content">
+                            <div class="news-meta">
+                                <span class="meta-cat"> Music & Arts</span>
+                                <span class="meta-date">25, november, 2020</span>
                             </div>
-                            <a class="news__title" href="#">Psychology may be you completed online</a>
-                            <p class="news__text">Creating software tailored to my games development gaming is a</p>
-                            <a class="news__more" href="#">
+                            <h3><a class="news-title" href="#">Psychology may be you completed online</a></h3>
+                            <p>Creating software tailored to my games development gaming is a</p>
+                            <a class="news-more" href="#">
                                 <i class="fas fa-plus-circle"></i>
                                 read more
                             </a>
@@ -875,18 +872,18 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="news__card">
-                        <div class="news__card__img">
+                    <div class="news-card">
+                        <div class="news-card-img">
                             <a href="#"><img src="assets/images/news/news2.jpg" alt="news2"></a>
                         </div>
-                        <div class="news__card__content">
-                            <div class="news__meta">
-                                <span class="meta__cat">javascript</span>
-                                <span class="meta__date">25, november, 2020</span>
+                        <div class="news-card-content">
+                            <div class="news-meta">
+                                <span class="meta-cat">javascript</span>
+                                <span class="meta-date">25, november, 2020</span>
                             </div>
-                            <a class="news__title" href="#">Expand a business mass other countries plan</a>
-                            <p class="news__text">Creating software tailored to my games development gaming is a</p>
-                            <a class="news__more" href="#">
+                            <h3><a class="news-title" href="#">Expand a business mass other countries plan</a></h3>
+                            <p>Creating software tailored to my games development gaming is a</p>
+                            <a class="news-more" href="#">
                                 <i class="fas fa-plus-circle"></i>
                                 read more
                             </a>
@@ -894,35 +891,35 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="news__event">
-                        <div class="event__list">
-                            <div class="event__date">
-                                <span class="event__month">nov</span>
-                                <h3 class="event__day">16</h3>
+                    <div class="news-event">
+                        <div class="event-list">
+                            <div class="event-date">
+                                <span class="event-month">nov</span>
+                                <h3 class="event-day">16</h3>
                             </div>
-                            <div class="event__content">
-                                <a class="event__meta" href=""> Music & Arts</a> 
-                                <a class="event__title" href="">Transforming our in science facilities</a>
-                            </div>
-                        </div>
-                        <div class="event__list">
-                            <div class="event__date">
-                                <span class="event__month">nov</span>
-                                <h3 class="event__day">16</h3>
-                            </div>
-                            <div class="event__content">
-                                <a class="event__meta" href=""> Music & Arts</a> 
-                                <a class="event__title" href="">Transforming our in science facilities</a>
+                            <div class="event-content">
+                                <a class="event-meta" href=""> Music & Arts</a> 
+                                <h3><a class="event-title" href="">Transforming our in science facilities</a></h3>
                             </div>
                         </div>
-                        <div class="event__list">
-                            <div class="event__date">
-                                <span class="event__month">nov</span>
-                                <h3 class="event__day">16</h3>
+                        <div class="event-list">
+                            <div class="event-date">
+                                <span class="event-month">nov</span>
+                                <h3 class="event-day">16</h3>
                             </div>
-                            <div class="event__content">
-                                <a class="event__meta" href=""> Music & Arts</a> 
-                                <a class="event__title" href="">Transforming our in science facilities</a>
+                            <div class="event-content">
+                                <a class="event-meta" href=""> Music & Arts</a> 
+                                <h3><a class="event-title" href="">Transforming our in science facilities</a></h3>
+                            </div>
+                        </div>
+                        <div class="event-list">
+                            <div class="event-date">
+                                <span class="event-month">nov</span>
+                                <h3 class="event-day">16</h3>
+                            </div>
+                            <div class="event-content">
+                                <a class="event-meta" href=""> Music & Arts</a> 
+                                <h3><a class="event-title" href="">Transforming our in science facilities</a></h3>
                             </div>
                         </div>
                     </div>
@@ -936,28 +933,28 @@
 
 
     <!--===================================
-              BECOME PART START
+              INTRO PART START
     =====================================-->
-    <section id="become__part">
+    <section class="intro-part">
         <div class="container">
-            <div class="become__main">
-                <div class="become">
+            <div class="row">
+                <div class="intro">
                     <img src="assets/images/become_one/left_icon.png" alt="left_icon">
-                    <div class="become__content">
-                        <h3 class="become__title">Become an Instructor</h3>
-                        <p class="become__descrip">There’s a new elite forming in higher education: universities that have millions of enrollments.</p>
-                        <a class="btn__link" href="#">
+                    <div class="intro-content">
+                        <h3>Become an Instructor</h3>
+                        <p>There’s a new elite forming in higher education: universities that have millions of enrollments.</p>
+                        <a class="btn btn-primary" href="#">
                             <i class="fas fa-user-plus"></i>
                             apply now
                         </a>
                     </div>
                 </div>
-                <div class="become">
+                <div class="intro">
                     <img src="assets/images/become_one/right_icon.png" alt="right_icon">
-                    <div class="become__content">
-                        <h3 class="become__title">Become a Partner</h3>
-                        <p class="become__descrip"> Join millions of people from around the world learning together. Online learning is as easy and natural as chatting.</p>
-                        <a class="btn__link" href="#">
+                    <div class="intro-content">
+                        <h3>Become a Partner</h3>
+                        <p>Join millions of people from around the world learning together. Online learning is as easy and natural as chatting.</p>
+                        <a class="btn btn-primary" href="#">
                             <i class="fas fa-user-plus"></i>
                             contact us
                         </a>
@@ -967,29 +964,33 @@
         </div>
     </section>
     <!--===================================
-                 BECOME PART END
+                 INTRO PART END
     =====================================-->
 
 
     <!--===================================
               NEWSLETTER PART START
     =====================================-->
-    <section id="newsletter__part">
+    <section class="newsletter-part">
         <div class="container">
-            <div class="newsletter">
-                <div class="letter__content">
-                    <h3 class="heading"># Newsletter</h3>
-                    <h2 class="title">Join our community of students</h2>
-                </div>
-                <form action="" method="">
-                    <div class="letter__form">
-                        <input class="letter__input" type="text" placeholder="Enter your email">
-                        <button class="letter__btn">
-                            <i class="fas fa-envelope"></i> 
-                            <span>subscribe</span>
-                        </button>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="letter-content">
+                        <h2>
+                            <span class="title"># Newsletter</span>
+                            Join our community of students
+                        </h2>
                     </div>
-                </form>
+                </div>
+                <div class="col-lg-6">
+                    <form class="letter-form" action="" method="">
+                        <input class="letter-input" type="text" placeholder="Enter your email">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> 
+                            subscribe
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -1001,12 +1002,12 @@
     <!--===================================
                 FOOTER PART START
     =====================================-->
-    <section id="footer__part">
+    <section class="footer-part">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="footer__menu">
-                        <h3>company</h3>
+                    <div class="footer-widget">
+                        <h4>company</h4>
                         <ul>
                             <li><a href="#">all course</a></li>
                             <li><a href="#">Digital marketing</a></li>
@@ -1016,8 +1017,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="footer__menu">
-                        <h3>categories</h3>
+                    <div class="footer-widget">
+                        <h4>categories</h4>
                         <ul>
                             <li><a href="#">all course</a></li>
                             <li><a href="#">Digital marketing</a></li>
@@ -1027,8 +1028,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="footer__menu">
-                        <h3>support</h3>
+                    <div class="footer-widget">
+                        <h4>support</h4>
                         <ul>
                             <li><a href="#">all course</a></li>
                             <li><a href="#">Digital marketing</a></li>
@@ -1038,13 +1039,13 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="footer__menu">
-                        <h3>get in touch</h3>
+                    <div class="footer-widget">
+                        <h4>get in touch</h4>
                         <ul>
                             <li><a href="#">all course</a></li>
                             <li><a href="#">Digital marketing</a></li>
                         </ul>
-                        <div class="footer__icon">
+                        <div class="footer-icon">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -1052,18 +1053,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <div class="footer__end">
-                        <div class="footer__end__content">
-                            <a href="#"><img src="assets/images/logo/logo.png" alt="logo"></a>
-                            <p>Copyright © 2020 <span>Turitor</span>. All Right Reserved.</p>
-                        </div>
-                        <div class="footer__end__menu">
-                            <a href="#">Privacy policy</a>
-                            <a href="#">cockie policy</a>
-                            <a href="#"><i class="fas fa-arrow-up"></i></a>
-                        </div>
+            </div>
+            <div class="row footer-end">
+                <div class="col-lg-6">
+                    <div class="footer-end-content">
+                        <a href="#"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                        <p>Copyright © 2020 <a href="#">Turitor</a>. All Right Reserved.</p>
                     </div>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <ul class="footer-end-menu">
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">cockie policy</a></li>
+                        <li><a href="#"><i class="fas fa-arrow-up"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 
 
 // FOR TESTIMONIAL SECTION
-$('.testi__slider').slick({
+$('.testi-slider').slick({
     dots: true,
     infinite: true,
     autoplay: true,
@@ -42,7 +42,7 @@ $('.testi__slider').slick({
 
 
   // FOR INSTRUCTION SECTION
-$('.instruct__slider').slick({
+$('.instruct-slider').slick({
   dots: true,
   infinite: true,
   autoplay: true,
@@ -81,14 +81,14 @@ $('.instruct__slider').slick({
 
 
 // FOR PARTNER SECTION
-$('.partner__slider').slick({
+$('.partner-slider').slick({
     dots: true,
     infinite: true,
     autoplay: true,
-    arrows: false,
+    arrows: true,
     speed: 1000,
-    prevArrow: '<i class="flaticon-right-arrow dandik"></i>',
-    nextArrow: '<i class="flaticon-left-arrow bamdik"></i>',
+    prevArrow: '<i class="fas fa-long-arrow-alt-right dandik"></i>',
+    nextArrow: '<i class="fas fa-long-arrow-alt-left bamdik"></i>',
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [

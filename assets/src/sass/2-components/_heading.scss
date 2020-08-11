@@ -1,0 +1,26 @@
+
+
+
+
+.heading {
+    border-right: 1px solid #d4d8e0;
+}
+
+.title {
+    color: $text__color;
+    font-size: $sm__size;
+    font-weight: $regular__weight;
+    font-family: $primary__family;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.heading-describe {
+    margin-left: 10px;
+    padding: 15px 0px;
+}
+
+.heading-btn {
+    text-align: right;
+    padding: 12px 0px;
+}
